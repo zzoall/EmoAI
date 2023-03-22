@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from final.settings import AUTH_USER_MODEL as User
 # 질문란
 class Question(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE)

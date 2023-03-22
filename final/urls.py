@@ -17,10 +17,9 @@ from django.contrib import admin
 from django.urls import path , include
 
 urlpatterns = [
-  
     path('admin/', admin.site.urls),
     # 대문 페이지 final/urls.py 가 아닌 main/urls.py 에서 받도록함
     path('', include('main.urls')),
+    path('', include('allauth.urls')),
     path('QnA/', include('QnA.urls')), 
-    path('accounts/', include('allauth.urls')),
-]
+    ]

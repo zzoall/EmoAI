@@ -3,10 +3,7 @@ import datetime
 from datetime import timedelta
 
 def index(request):
-    return render(
-        request,
-        'index.html'
-    )
+    return render(request, 'index.html')
 
 def demo(request):
     return render(request, 'demo.html')
@@ -37,3 +34,7 @@ def password(request):
 
 def register(request):
     return render(request, 'register.html')
+
+def profile(request):
+    return render(request, 'profile.html')
+
